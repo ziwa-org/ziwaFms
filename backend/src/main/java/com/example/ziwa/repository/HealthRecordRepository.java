@@ -20,7 +20,7 @@ public interface HealthRecordRepository extends JpaRepository<HealthRecord, Long
     List<HealthRecord> findByDateBetween(LocalDate start, LocalDate end, Pageable pageable);
     
     @Query(value = "SELECT * FROM health_records hr WHERE hr.withdrawal_period_days > 0 " +
-           "AND DATEADD('DAY', hr.withdrawal_period_days, hr.date) >= CURRENT_DATE " +
+           "AND DATE_ADD(hr.date, INTERVAL hr.withdrawal_period_days DAY) >= CURRENT_DATE " +
            "ORDER BY hr.date DESC", nativeQuery = true)
     List<HealthRecord> findActiveWithdrawals();
 }

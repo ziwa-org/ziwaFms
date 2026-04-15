@@ -1,0 +1,118 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-sidebar: #2c5f4e;
+  --color-sidebar-foreground: #ffffff;
+  --color-sidebar-primary: #7bdc93;
+  --color-sidebar-primary-foreground: #2c5f4e;
+  --color-sidebar-accent: #3a6b5a;
+  --color-sidebar-accent-foreground: #ffffff;
+  --color-sidebar-border: #3a6b5a;
+  --color-sidebar-ring: #7bdc93;
+  --color-primary: #22c55e;
+  --color-primary-foreground: #ffffff;
+  --color-background: #f8faf9;
+  --color-foreground: #1a1a1a;
+  --color-card: #ffffff;
+  --color-card-foreground: #1a1a1a;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #1a1a1a;
+  --color-secondary: #f1f5f4;
+  --color-secondary-foreground: #1a1a1a;
+  --color-muted: #f1f5f4;
+  --color-muted-foreground: #6b7280;
+  --color-accent: #dcfce7;
+  --color-accent-foreground: #166534;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #e5e7eb;
+  --color-input: #e5e7eb;
+  --color-input-background: #ffffff;
+  --color-ring: #22c55e;
+  --color-chart-1: #22c55e;
+  --color-chart-2: #3b82f6;
+  --color-chart-3: #f59e0b;
+  --color-chart-4: #ef4444;
+  --color-chart-5: #8b5cf6;
+  --radius: 0.625rem;
+}
+
+:root {
+  --sidebar: #2c5f4e;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #7bdc93;
+  --sidebar-primary-foreground: #2c5f4e;
+  --sidebar-accent: #3a6b5a;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #3a6b5a;
+  --sidebar-ring: #7bdc93;
+  --primary: #22c55e;
+  --primary-foreground: #ffffff;
+  --background: #f8faf9;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  --secondary: #f1f5f4;
+  --secondary-foreground: #1a1a1a;
+  --muted: #f1f5f4;
+  --muted-foreground: #6b7280;
+  --accent: #dcfce7;
+  --accent-foreground: #166534;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --input-background: #ffffff;
+  --ring: #22c55e;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html, body, #root {
+    min-height: 100vh;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.gradient-sidebar {
+  background: linear-gradient(135deg, var(--sidebar) 0%, var(--sidebar-accent) 100%);
+}
+
+.gradient-sidebar-reverse {
+  background: linear-gradient(135deg, var(--sidebar-accent) 0%, var(--sidebar) 100%);
+}
+
+.gradient-card {
+  background: linear-gradient(135deg, var(--sidebar) 0%, var(--sidebar-accent) 50%, var(--sidebar) 100%);
+}
+
+.gradient-primary {
+  background: linear-gradient(135deg, var(--sidebar-primary) 0%, rgba(123, 220, 147, 0.8) 100%);
+}
+
+.gradient-glow {
+  box-shadow: 0 0 20px rgba(123, 220, 147, 0.3), 0 0 40px rgba(123, 220, 147, 0.1);
+}

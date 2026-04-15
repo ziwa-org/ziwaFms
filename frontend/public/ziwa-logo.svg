@@ -1,0 +1,11 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cow silhouette icon -->
+  <g transform="translate(0, 8)">
+    <path d="M8 12C8 12 6 10 4 10C2 10 0 12 0 14C0 16 1 17 2 17C2 17 2 20 4 22C6 24 10 24 12 22C14 20 14 17 14 17C15 17 16 16 16 14C16 12 14 10 12 10C10 10 8 12 8 12Z" fill="#22C55E"/>
+    <ellipse cx="5" cy="14" rx="1" ry="1.5" fill="white"/>
+    <ellipse cx="11" cy="14" rx="1" ry="1.5" fill="white"/>
+  </g>
+  
+  <!-- Text "Ziwa Dairy" -->
+  <text x="24" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#22C55E">Ziwa Dairy</text>
+</svg>
