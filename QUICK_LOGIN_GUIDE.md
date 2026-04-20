@@ -4,7 +4,7 @@
 
 1. **Clear users** (if any exist):
    ```bash
-   mysql -u php_user -pPhp_pass@2026 ziwa_db -e "TRUNCATE TABLE users;"
+   mysql -u username -p password ziwa_db -e "TRUNCATE TABLE users;"
    ```
 
 2. **Restart backend**:
@@ -27,9 +27,3 @@
 
 - Username: `testuser`
 - Password: `Test@123`
-
-## That's It!
-
-The backend now automatically creates users on startup. No more manual SQL, no more Swagger UI registration, no more 500 errors.
-
-Just restart the backend and login!

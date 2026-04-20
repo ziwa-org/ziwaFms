@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+./IMPLEMENTATION_STATUS.md
+./LOGIN_TROUBLESHOOTING.md
